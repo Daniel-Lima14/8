@@ -1,16 +1,11 @@
-let saldo_bancario = parseInt(prompt("Digite o saldo inicial"))
-let valor_realizado = 
-let valor_insuficiente = 3000
-
-
-if (saldo_bancario >= valor_realizado){
-    saldo_bancario = saldo_bancario - valor_realizado
-    alert("Ocorreu corretamente!")
-
-}else if( saldo_bancario >= valor_insuficiente){
-    saldo_bancario = saldo_bancario - valor_insuficiente
-    alert("Saldo insuficiente!")
+let dinheiro_disponivel = parseInt(prompt("Digite o valor disponivel"))
+let valor_da_compra = parseInt(prompt("Digite o valor da compra "))
+let dinheiro_restante = dinheiro_disponivel - valor_da_compra
+if(dinheiro_disponivel >= valor_da_compra){
+    dinheiro_disponivel = dinheiro_disponivel - valor_da_compra
+    alert(`compra realiza , saldo restante e de ${dinheiro_restante} reais`)
 }
- else{
-     alert("Saldo_insuficiente!")
- }
+
+
+else {alert("dinheiro insuficiente")
+}
